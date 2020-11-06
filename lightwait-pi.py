@@ -5,13 +5,12 @@ import socket
 import time
 import threading
 
-# import RPi.GPIO as GPIO
 from gpiozero import PWMLED
 
-# TODO: which ports to use?
-RED_PORT = 23
-GREEN_PORT = 24
-BLUE_PORT = 25
+# BCM Pin numbering! "GPIO 14", "GPIO 15" and "GPIO 18" are next to each other!
+RED_PORT = 18
+GREEN_PORT = 15
+BLUE_PORT = 14
 
 
 def bytes_to_float_colors(colors):
